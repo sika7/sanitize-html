@@ -13,7 +13,11 @@
     "dist"
   ],
   "keywords": [
-    "html-sanitize"
+    "html-sanitize",
+    "sanitize",
+    "html",
+    "whitelist",
+    "allow for each tag"
   ],
   "author": "sika7 <91676209+sika7@users.noreply.github.com>",
   "license": "MIT",
