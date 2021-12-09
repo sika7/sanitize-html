@@ -1,5 +1,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+[![Test](https://github.com/sika7/sanitize-html/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/sika7/sanitize-html/actions/workflows/test.yml)
+
 # @sika7/sanitize-html
 
 this package is html sanitize. You can allow the attributes of each tag.
