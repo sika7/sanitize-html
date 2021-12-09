@@ -1,0 +1,72 @@
+{
+  "name": "@sika7/sanitize-html",
+  "version": "0.0.0",
+  "description": "this package is html sanitize Provide.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "build": "tsc",
+    "start:dev": "tsc && node ./dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "html-sanitize"
+  ],
+  "author": "sika7 <91676209+sika7@users.noreply.github.com>",
+  "license": "MIT",
+  "repository": "https://github.com/sika7/sanitize-html",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 2017
+    },
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:jest/recommended"
+    ],
+    "rules": {
+      "jest/expect-expect": "off"
+    }
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "statements": 100
+      }
+    },
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.+(ts|tsx|js)",
+      "**/?(*.)+(spec|test).+(ts|tsx|js)"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    }
+  },
+  "dependencies": {
+    "@sika7/silver-html": "^1.0.1",
+    "@sika7/silver-html-plugin-sanitize": "^1.0.2",
+    "typescript": "^4.5.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "eslint": "^8.4.1",
+    "eslint-plugin-jest": "^25.3.0",
+    "jest": "^27.4.3",
+    "ts-jest": "^27.1.1"
+  }
+}
